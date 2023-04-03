@@ -22,6 +22,7 @@ use Webleit\ZohoBooksApi\Modules\Settings as SettingsModules;
  * @property-read SettingsModules\OpeningBalances $openingbalances;
  * @property-read SettingsModules\AutoReminders $autoreminders;
  * @property-read SettingsModules\ManualReminders $manualreminders;
+ * @property-read SettingsModules\Tags $tags;
  */
 class Settings implements \Webleit\ZohoBooksApi\Contracts\ProvidesModules, \Webleit\ZohoBooksApi\Contracts\Module
 {
@@ -47,7 +48,8 @@ class Settings implements \Webleit\ZohoBooksApi\Contracts\ProvidesModules, \Webl
         'taxexemptions' => Settings\TaxExemptions::class,
         'openingbalances' => Settings\OpeningBalances::class,
         'autoreminders' => Settings\AutoReminders::class,
-        'manualreminders' => Settings\ManualReminders::class
+        'manualreminders' => Settings\ManualReminders::class,
+        'tags' => Settings\Tags::class
     ];
 
     /**
